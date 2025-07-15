@@ -1,0 +1,34 @@
+{
+    "https:\/\/rt-esp.rttv.com\/dvr\/rtesp\/playlist_4500Kb.m3u8": {
+        "name": "rt",
+        "hls_time": 1,
+        "buffer_name": "rttttt"
+    },
+    "https:\/\/live.france24.com:443\/hls\/live\/2037220-b\/F24_ES_HI_HLS\/master_2300.m3u8": {
+        "name": "france24222",
+        "hls_time": 15
+    },
+    "https:\/\/fl3.moveonjoy.com\/Sony_Movie_Channel\/index.m3u8": {
+        "name": "sony",
+        "hls_time": 4
+    },
+    "https:\/\/live.france24.com:443\/hls\/live\/2037220-b\/F24_ES_HI_HLS\/master_2300.m3u8https:\/\/fl3.moveonjoy.com\/Sony_Movie_Channel\/index.m3u8": {
+        "name": "RT-DIRECTO",
+        "hls_time": 4,
+        "buffer_name": "rtbuff"
+    },
+    "http:\/\/mdstrm.com\/live-stream-playlist\/57d1a22064f5d85712b20dab.m3u8": {
+        "name": "24horas",
+        "hls_time": 10
+    },
+    "http:\/\/45.232.176.29:8000\/play\/a01x": {
+        "name": "nose",
+        "hls_time": 4,
+        "buffer_name": "nose1"
+    },
+    "https:\/\/a-cdn.klowdtv.com\/live1\/cine_720p\/playlist.m3u8": {
+        "name": "aaa",
+        "hls_time": 4,
+        "buffer_name": "aa"
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "https:\/\/rt-esp.rttv.com\/dvr\/rtesp\/playlist_4500Kb.m3u8": {
+        "buffered_url": "http:\/\/192.168.1.56\/buffer_rt_20250714_001646\/playlist.m3u8",
+        "name": "rt",
+        "timestamp": 1752452206,
+        "original_url": "https:\/\/rt-esp.rttv.com\/dvr\/rtesp\/playlist_4500Kb.m3u8",
+        "dir": "buffer_rt_20250714_001646"
+    },
+    "https:\/\/live.france24.com:443\/hls\/live\/2037220-b\/F24_ES_HI_HLS\/master_2300.m3u8": {
+        "buffered_url": "http:\/\/192.168.1.56\/FFmpeg_UI\/buffer_5ddffb36591f8152f03e825ad2b0f0e1\/index.m3u8",
+        "name": "france24222",
+        "timestamp": 1752449980,
+        "original_url": "https:\/\/live.france24.com:443\/hls\/live\/2037220-b\/F24_ES_HI_HLS\/master_2300.m3u8",
+        "dir": "buffer_5ddffb36591f8152f03e825ad2b0f0e1"
+    },
+    "https:\/\/fl3.moveonjoy.com\/Sony_Movie_Channel\/index.m3u8": {
+        "buffered_url": "http:\/\/192.168.1.56\/FFmpeg_UI\/buffer_05d58fb3ed38bbb17dd5b847244176ec\/index.m3u8",
+        "name": "sony",
+        "timestamp": 1752450021,
+        "original_url": "https:\/\/fl3.moveonjoy.com\/Sony_Movie_Channel\/index.m3u8",
+        "dir": "buffer_05d58fb3ed38bbb17dd5b847244176ec"
+    },
+    "https:\/\/live.france24.com:443\/hls\/live\/2037220-b\/F24_ES_HI_HLS\/master_2300.m3u8https:\/\/fl3.moveonjoy.com\/Sony_Movie_Channel\/index.m3u8": {
+        "buffered_url": "http:\/\/192.168.1.56:8081\/FFmpeg_UI\/buffer_rtbuff_1752467474\/playlist.m3u8",
+        "name": "rtbuff",
+        "timestamp": 1752467474,
+        "original_url": "https:\/\/live.france24.com:443\/hls\/live\/2037220-b\/F24_ES_HI_HLS\/master_2300.m3u8https:\/\/fl3.moveonjoy.com\/Sony_Movie_Channel\/index.m3u8",
+        "dir": "buffer_rtbuff_1752467474"
+    },
+    "http:\/\/mdstrm.com\/live-stream-playlist\/57d1a22064f5d85712b20dab.m3u8": {
+        "buffered_url": "http:\/\/192.168.1.56\/FFmpeg_UI\/buffer_xd_1752453816\/playlist.m3u8",
+        "name": "xd",
+        "timestamp": 1752453816,
+        "original_url": "http:\/\/mdstrm.com\/live-stream-playlist\/57d1a22064f5d85712b20dab.m3u8",
+        "dir": "buffer_xd_1752453816"
+    },
+    "http:\/\/45.232.176.29:8000\/play\/a01x": {
+        "buffered_url": "http:\/\/192.168.1.56:8081\/FFmpeg_UI\/buffer_nose1_1752467539\/playlist.m3u8",
+        "name": "nose1",
+        "timestamp": 1752467539,
+        "original_url": "http:\/\/45.232.176.29:8000\/play\/a01x",
+        "dir": "buffer_nose1_1752467539"
+    },
+    "https:\/\/a-cdn.klowdtv.com\/live1\/cine_720p\/playlist.m3u8": {
+        "buffered_url": "http:\/\/192.168.1.56:8081\/FFmpeg_UI\/buffer_aa_1752468708\/playlist.m3u8",
+        "name": "aa",
+        "timestamp": 1752468708,
+        "original_url": "https:\/\/a-cdn.klowdtv.com\/live1\/cine_720p\/playlist.m3u8",
+        "dir": "buffer_aa_1752468708"
+    }
+}

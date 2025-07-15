@@ -1,0 +1,38 @@
+{
+    "https:\/\/live.france24.com:443\/hls\/live\/2037220-b\/F24_ES_HI_HLS\/master_2300.m3u8": {
+        "stream_name": "master_2300.m3u8",
+        "buffer_name": "master_2300.m3u8",
+        "buffer_type": "hls",
+        "hls_time": 10,
+        "audio_codec": "copy",
+        "audio_bitrate": "",
+        "resolution": "auto",
+        "fps": 0,
+        "gop": 0,
+        "enable_err": false
+    },
+    "https:\/\/espanol-livews.cgtn.com\/hls\/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd\/playlist.m3u8": {
+        "stream_name": "playlist.m3u8",
+        "buffer_name": "xd",
+        "buffer_type": "hls",
+        "hls_time": 4,
+        "audio_codec": "copy",
+        "audio_bitrate": "",
+        "resolution": "auto",
+        "fps": 0,
+        "gop": 0,
+        "enable_err": false
+    },
+    "http:\/\/mdstrm.com\/live-stream-playlist\/57d1a22064f5d85712b20dab.m3u8": {
+        "stream_name": "57d1a22064f5d85712b20dab.m3u8",
+        "buffer_name": "57d1a22064f5d85712b20dab.m3u8",
+        "buffer_type": "hls",
+        "hls_time": 4,
+        "audio_codec": "copy",
+        "audio_bitrate": "",
+        "resolution": "auto",
+        "fps": 0,
+        "gop": 0,
+        "enable_err": false
+    }
+}

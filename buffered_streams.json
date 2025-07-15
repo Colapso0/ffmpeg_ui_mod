@@ -1,0 +1,8 @@
+{
+    "https:\/\/live.france24.com:443\/hls\/live\/2037220-b\/F24_ES_HI_HLS\/master_2300.m3u8": {
+        "buffered_url": "buffer_master_2300_m3u8_1752553509\/playlist.m3u8",
+        "timestamp": 1752553509,
+        "buffer_type": "hls",
+        "web_url": "http:\/\/192.168.1.56\/FFmpeg_UI\/buffer_master_2300_m3u8_1752553509\/playlist.m3u8"
+    }
+}
