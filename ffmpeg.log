@@ -4872,4 +4872,129 @@ size=N/A time=01:27:43.24 bitrate=N/A speed=1.01x    [https @ 0x7329f8016f00] O
 [https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01268.ts' for reading
 size=N/A time=01:27:49.98 bitrate=N/A speed=1.01x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_526.ts' for writing
 [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
-size=N/A time=01:27:50.12 bitrate=N/A speed=1.01x    size=N/A time=01:27:53.04 bitrate=N/A speed=1.01x    
+size=N/A time=01:27:50.12 bitrate=N/A speed=1.01x    size=N/A time=01:27:53.04 bitrate=N/A speed=1.01x    [https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01269.ts' for reading
+size=N/A time=01:27:59.98 bitrate=N/A speed=1.01x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_527.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+size=N/A time=01:28:00.48 bitrate=N/A speed=1.01x    size=N/A time=01:28:03.56 bitrate=N/A speed=1.01x    [https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01270.ts' for reading
+size=N/A time=01:28:09.99 bitrate=N/A speed=1.01x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_528.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+size=N/A time=01:28:10.72 bitrate=N/A speed=1.01x    size=N/A time=01:28:13.96 bitrate=N/A speed=1.01x    [https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01271.ts' for reading
+size=N/A time=01:28:19.99 bitrate=N/A speed=1.01x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_529.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+size=N/A time=01:28:20.20 bitrate=N/A speed=1.01x    size=N/A time=01:28:23.84 bitrate=N/A speed=1.01x    [https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01272.ts' for reading
+size=N/A time=01:28:29.98 bitrate=N/A speed=1.01x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_530.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+size=N/A time=01:28:30.36 bitrate=N/A speed=1.01x    size=N/A time=01:28:33.20 bitrate=N/A speed=1.01x    [https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01273.ts' for reading
+size=N/A time=01:28:39.98 bitrate=N/A speed=1.01x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_531.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+size=N/A time=01:28:41.00 bitrate=N/A speed=1.01x    size=N/A time=01:28:45.12 bitrate=N/A speed=1.01x    [https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01274.ts' for reading
+size=N/A time=01:28:49.99 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_532.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01275.ts' for reading
+size=N/A time=01:28:59.99 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_533.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01276.ts' for reading
+size=N/A time=01:29:09.98 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_534.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+size=N/A time=01:29:14.12 bitrate=N/A speed=   1x    [https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01277.ts' for reading
+size=N/A time=01:29:19.98 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_535.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01278.ts' for reading
+size=N/A time=01:29:29.99 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_536.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01279.ts' for reading
+size=N/A time=01:29:39.99 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_537.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01280.ts' for reading
+size=N/A time=01:29:49.98 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_538.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01281.ts' for reading
+size=N/A time=01:29:59.98 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_539.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01282.ts' for reading
+size=N/A time=01:30:09.99 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_540.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01283.ts' for reading
+size=N/A time=01:30:19.99 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_541.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01284.ts' for reading
+size=N/A time=01:30:29.98 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_542.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01285.ts' for reading
+size=N/A time=01:30:39.98 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_543.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01286.ts' for reading
+size=N/A time=01:30:49.99 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_544.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01287.ts' for reading
+size=N/A time=01:30:59.99 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_545.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01288.ts' for reading
+size=N/A time=01:31:09.98 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_546.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01289.ts' for reading
+size=N/A time=01:31:19.98 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_547.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01290.ts' for reading
+size=N/A time=01:31:29.99 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_548.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01291.ts' for reading
+size=N/A time=01:31:39.99 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_549.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[https @ 0x7329f8016f00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/master_2300.m3u8' for reading
+[hls @ 0x57401b8319c0] Skip ('#EXT-X-VERSION:3')
+[https @ 0x57401bbf9c80] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01292.ts' for reading
+[https @ 0x57401bc13d00] Opening 'https://live.france24.com:443/hls/live/2037220-b/F24_ES_HI_HLS/20250619T024107/master_2300/00111/master_2300_01293.ts' for reading
+size=N/A time=01:31:49.98 bitrate=N/A speed=   1x    [hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_550.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/seg_551.ts' for writing
+[hls @ 0x57401bff5540] Opening '/var/www/html/FFmpeg_UI/buffer_master_2300_m3u8_1752553509/playlist.m3u8.tmp' for writing
+size=N/A time=01:32:00.32 bitrate=N/A speed=1.01x    size=N/A time=01:32:03.08 bitrate=N/A speed=1.01x    
