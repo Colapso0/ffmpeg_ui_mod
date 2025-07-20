@@ -168,7 +168,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $output_file,
                 escapeshellarg($log_file)
             );
-            $buffered_url_web_path = "http://{$_SERVER['HTTP_HOST']}/FFmpeg_UI/{$dir_name}/playlist.m3u8";
+            $buffered_url_web_path = "http://{$_SERVER['HTTP_HOST']}/{$dir_name}/playlist.m3u8";
 
         } else { // SRT (o TS en este caso para simular SRT para web)
             $output_file = escapeshellarg("{$outDir}/stream.ts"); // Usamos .ts para compatibilidad web si se visualiza
@@ -182,7 +182,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 escapeshellarg($log_file)
             );
             // Para SRT, si es para web, aún necesitamos un archivo HTTP, por eso .ts
-            $buffered_url_web_path = "http://{$_SERVER['HTTP_HOST']}/FFmpeg_UI/{$dir_name}/stream.ts";
+            $buffered_url_web_path = "http://{$_SERVER['HTTP_HOST']}/{$dir_name}/stream.ts";
 
         }
 
@@ -257,9 +257,12 @@ if (isset($_GET['buffer']) && isset($buffered[$_GET['buffer']])) {
     if (file_exists($log_file)) {
         $log_content = file_get_contents($log_file);
         // Buscar líneas que contengan la URL original o el nombre del directorio del buffer
-        $search_patterns = [
-            preg_quote($u),
-            preg_quote(basename(dirname($buffered_info['buffered_url']))) // Busca el nombre del directorio buffer_xxx
+	$url_pattern    = preg_quote($u, '/');
+	$dir_name       = basename(dirname($buffered_info['buffered_url']));
+ 	$dir_pattern    = preg_quote($dir_name, '/');
+ 	$search_patterns = [
+ 	    $url_pattern,
+            $dir_pattern
         ];
         foreach (explode("\n", $log_content) as $line) {
             foreach ($search_patterns as $pattern) {
