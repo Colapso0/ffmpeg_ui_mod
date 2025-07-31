@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  ffmpeg_ui:
+    build: .
+    container_name: ffmpeg_ui
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
+    restart: always
