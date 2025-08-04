@@ -6,6 +6,8 @@ RUN apt-get update && \
     apt-get install -y ffmpeg unzip jq && \
     docker-php-ext-install mysqli
 
+RUN echo "memory_limit = 512M" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+
 # Copia el contenido del proyecto al directorio de Apache
 COPY . /var/www/html/
 

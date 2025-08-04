@@ -78,11 +78,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Acción: Bufferizar o Testear
     if ($action === 'buffer' || $action === 'test') {
-        // Usamos la configuración del formulario si existe, de lo contrario usamos la guardada.
         if (isset($meta[$url])) {
             $cfg = $meta[$url];
         } else {
-            // Si no hay metadatos guardados, usamos los valores del formulario actual
             $cfg = [
                 'stream_name'   => $stream_name,
                 'buffer_name'   => $buffer_name,
@@ -97,7 +95,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ];
         }
 
-        // Corregido: asegurar que todas las claves del array $cfg existen
         $cfg['stream_name']   = $cfg['stream_name'] ?? basename($url);
         $cfg['buffer_name']   = $cfg['buffer_name'] ?? sanitizeFileName($cfg['stream_name']);
         $cfg['buffer_type']   = $cfg['buffer_type'] ?? 'hls';
@@ -109,31 +106,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $cfg['gop']           = intval($cfg['gop'] ?? 0);
         $cfg['enable_err']    = boolval($cfg['enable_err'] ?? false);
 
-        // Eliminar buffer anterior si existe para esta URL
+        // --- Lógica para reutilizar el directorio ---
+        $dir_name = null;
         if (isset($buffered[$url])) {
-            $old_dir = dirname(__DIR__ . '/../' . $buffered[$url]['buffered_url']);
-            if (is_dir($old_dir)) {
-                array_map('unlink', glob("$old_dir/*"));
-                @rmdir($old_dir);
+             // Si ya existe un buffer para esta URL, usamos su directorio y matamos el proceso anterior
+            $dir_name = basename(dirname(__DIR__ . '/../' . $buffered[$url]['buffered_url']));
+            $old_pid_file = dirname(__DIR__ . '/../' . $buffered[$url]['buffered_url']) . '/ffmpeg.pid';
+            if (file_exists($old_pid_file)) {
+                $pid = (int) file_get_contents($old_pid_file);
+                if ($pid > 0) {
+                    shell_exec("kill -9 $pid > /dev/null 2>&1");
+                }
             }
-            unset($buffered[$url]);
+        } else {
+            // Si no, creamos un nuevo nombre con la marca de tiempo
+            $timestamp = time();
+            $clean_name = sanitizeFileName($cfg['buffer_name']);
+            $dir_name = "buffer_{$clean_name}_{$timestamp}";
         }
-
-        $timestamp  = time();
-        $clean_name = sanitizeFileName($cfg['buffer_name']);
-        $dir_name   = "buffer_{$clean_name}_{$timestamp}";
-        $outDir     = __DIR__ . "/../$dir_name";
+        
+        $outDir = __DIR__ . "/../$dir_name";
         if (!is_dir($outDir)) {
             mkdir($outDir, 0777, true);
         }
 
         // Opciones FFmpeg
         $input_options = "-fflags +genpts -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 -rw_timeout 3000000 -thread_queue_size 512 -probesize 5000000 -analyzeduration 5000000";
-
-        $audio_opts = ($cfg['audio_codec'] !== 'copy')
-            ? sprintf('-c:a %s %s', escapeshellarg($cfg['audio_codec']), !empty($cfg['audio_bitrate']) ? sprintf('-b:a %s', escapeshellarg($cfg['audio_bitrate'])) : '')
-            : '-c:a copy';
-
+        $audio_opts = ($cfg['audio_codec'] !== 'copy') ? sprintf('-c:a %s %s', escapeshellarg($cfg['audio_codec']), !empty($cfg['audio_bitrate']) ? sprintf('-b:a %s', escapeshellarg($cfg['audio_bitrate'])) : '') : '-c:a copy';
         $video_opts = '-c:v copy';
         if ($cfg['resolution'] !== 'auto' && strpos($cfg['resolution'], 'x') !== false) {
             list($w, $h) = array_map('intval', explode('x', $cfg['resolution']));
@@ -141,15 +140,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         if ($cfg['fps'] > 0) $video_opts .= sprintf(' -r %d', $cfg['fps']);
         if ($cfg['gop'] > 0) $video_opts .= sprintf(' -g %d', $cfg['gop']);
-
-        // Se corrigió la generación de las opciones de error.
+        
         $err_opts = ($cfg['enable_err']) ? '-err_detect aggressive -fflags +discardcorrupt' : '';
         $buffered_url_web_path = '';
 
         if ($cfg['buffer_type'] === 'hls') {
             $output_file = escapeshellarg("{$outDir}/playlist.m3u8");
             $cmd = sprintf(
-                "nohup ffmpeg %s %s -i %s %s %s -f hls -hls_time %d -hls_list_size 5 -hls_flags delete_segments+round_durations -hls_segment_filename '%s/seg_%%03d.ts' %s >> %s 2>&1 &",
+                "nohup ffmpeg %s %s -i %s %s %s -f hls -hls_time %d -hls_list_size 5 -hls_flags delete_segments+round_durations -hls_segment_filename '%s/seg_%%03d.ts' %s >> %s 2>&1 & echo $! > %s",
                 $input_options,
                 $err_opts,
                 escapeshellarg($url),
@@ -158,20 +156,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $cfg['hls_time'],
                 escapeshellarg($outDir),
                 $output_file,
-                escapeshellarg($log_file)
+                escapeshellarg($log_file),
+                escapeshellarg("{$outDir}/ffmpeg.pid")
             );
             $buffered_url_web_path = "http://{$_SERVER['HTTP_HOST']}/{$dir_name}/playlist.m3u8";
         } else {
              $output_file = escapeshellarg("{$outDir}/stream.ts");
              $cmd = sprintf(
-                 "nohup ffmpeg %s %s -i %s %s %s -f mpegts %s >> %s 2>&1 &",
+                 "nohup ffmpeg %s %s -i %s %s %s -f mpegts %s >> %s 2>&1 & echo $! > %s",
                  $input_options,
                  $err_opts,
                  escapeshellarg($url),
                  $audio_opts,
                  $video_opts,
                  $output_file,
-                 escapeshellarg($log_file)
+                 escapeshellarg($log_file),
+                 escapeshellarg("{$outDir}/ffmpeg.pid")
              );
              $buffered_url_web_path = "http://{$_SERVER['HTTP_HOST']}/{$dir_name}/stream.ts";
         }
@@ -181,7 +181,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $buffered[$url] = [
             'buffered_url' => str_replace(__DIR__ . '/../', '', "{$outDir}/playlist.m3u8"),
-            'timestamp'    => $timestamp,
+            'timestamp'    => time(), // <--- CORRECCIÓN CLAVE
             'buffer_type'  => $cfg['buffer_type'],
             'web_url'      => $buffered_url_web_path,
             'last_command' => $cmd
@@ -196,6 +196,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (isset($buffered[$url])) {
             $buffer_info = $buffered[$url];
             $dir_to_delete = dirname(__DIR__ . '/../' . $buffer_info['buffered_url']);
+            // Matar el proceso de ffmpeg antes de borrar la carpeta
+            $pid_file = "{$dir_to_delete}/ffmpeg.pid";
+            if (file_exists($pid_file)) {
+                $pid = (int) file_get_contents($pid_file);
+                if ($pid > 0) {
+                     shell_exec("kill -9 $pid > /dev/null 2>&1");
+                }
+            }
             if (is_dir($dir_to_delete)) {
                 array_map('unlink', glob("$dir_to_delete/*"));
                 @rmdir($dir_to_delete);
